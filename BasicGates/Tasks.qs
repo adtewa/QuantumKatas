@@ -51,7 +51,7 @@ namespace Quantum.Kata.BasicGates {
         // Type X(q);
         // Then rebuild the project and rerun the tests - T11_StateFlip_Test should now pass!
 
-        // ...
+        X(q);
     }
 
 
@@ -64,7 +64,7 @@ namespace Quantum.Kata.BasicGates {
     // Note:  |+⟩ and |-⟩ form a different basis for single-qubit states, called X basis.
     // |0⟩ and |1⟩ are called Z basis.
     operation BasisChange (q : Qubit) : Unit is Adj+Ctl {
-        // ...
+        H(q);
     }
 
 
@@ -72,7 +72,7 @@ namespace Quantum.Kata.BasicGates {
     // Input: A qubit in state |ψ⟩ = α |0⟩ + β |1⟩.
     // Goal:  Change the qubit state to α |0⟩ - β |1⟩ (flip the sign of |1⟩ component of the superposition).
     operation SignFlip (q : Qubit) : Unit is Adj+Ctl {
-        // ...
+        Z(q);
     }
 
 
